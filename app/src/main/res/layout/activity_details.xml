@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".uilayer.activities.detailsactivity.DetailsActivity">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="25dp"
+                    android:elevation="12dp"
+                    app:cardCornerRadius="12dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/imageView_show_movieImage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="15dp"
+                            android:scaleType="fitXY" />
+
+                        <ImageButton
+                            android:id="@+id/btn_movie_player"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_margin="15dp"
+                            android:background="@color/white"
+                            android:contentDescription="@string/play_movie"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/youtube_logo"
+
+                            />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/textView_show_movie_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="15dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Movie Name"
+                            android:textSize="45sp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="15dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/textView_show_movie_watch_count"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="15dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/textview_watch_count_backgeound"
+                                android:text="@string/watch_count"
+                                android:textSize="20sp" />
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/textView_show_movie_review"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="15dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:text="@string/review"
+                                android:textSize="20sp" />
+
+
+                        </LinearLayout>
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/textView_description"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:layout_margin="15dp"
+                            android:layout_marginTop="10dp"
+                            android:textSize="18sp"
+                            android:textStyle="italic" />
+
+
+                    </LinearLayout>
+
+
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/signup_fragment_background"
+        android:orientation="vertical"
+        tools:context=".uilayer.fragments.selectedplanfragment.SelectedPlanFragment">
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="25dp"
+                    android:text="@string/congratulation_you_are_getting_an_upgrade"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/congrate_img"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="25dp"
+                    android:scaleType="fitXY" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/textview_enjoy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="25dp"
+                    android:text="Enjoy Script"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="25dp"
+                    android:layout_marginBottom="731dp"
+                    android:elevation="5dp"
+                    app:cardCornerRadius="5dp"
+                    app:strokeColor="@color/btn_continue_color">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/signup_fragment_background"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/textview_planType"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="25dp"
+                            android:text="@string/_30_days"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="25dp"
+                            android:text="@string/line"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/textview_plan_resolution"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="25dp"
+                            android:text="@string/usd4_99"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="25dp"
+                            android:text="@string/line"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/textview_plan_showType"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="25dp"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_ok_thanks"
+                    android:layout_width="350dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="@color/btn_continue_color"
+                    android:clickable="true"
+                    android:text="@string/ok_thanks"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    app:cornerRadius="0dp" />
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</layout>

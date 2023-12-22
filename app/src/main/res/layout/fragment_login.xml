@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/signup_fragment_background"
+        android:orientation="vertical"
+        tools:context=".uilayer.fragments.loginfragment.LoginFragment">
+
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:scaleType="fitXY" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/username_login"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_columnSpan="2"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:hint="@string/username_hint"
+            android:textColorHint="@color/white"
+            app:boxStrokeColor="@color/btn_continue_color"
+            app:hintAnimationEnabled="true"
+
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:inputType="text"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password_login"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_columnSpan="2"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:hint="@string/password_hint"
+            android:textColorHint="@color/white"
+            app:boxStrokeColor="@color/btn_continue_color"
+            app:hintAnimationEnabled="true"
+            app:passwordToggleDrawable="@drawable/pass_toggle"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/white"
+
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:inputType="textPassword"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_login"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/btn_continue_color"
+            android:clickable="true"
+            android:text="@string/login"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:cornerRadius="0dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_login_need_help"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:clickable="true"
+            android:text="@string/need_help"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:cornerRadius="0dp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:text="@string/new_to_moviesshow_sign_up_now"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="25dp"
+            android:text="@string/bot_info"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+</layout>

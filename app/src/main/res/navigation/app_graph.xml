@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_graph"
+    app:startDestination="@id/dispalyPlanFeaturesFragment">
+    <fragment
+        android:id="@+id/loginFragment2"
+        android:name="com.eng_abdelrahmman_hussien.movieapp.uilayer.fragments.loginfragment.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment2_to_homeActivity2"
+            app:destination="@id/homeActivity2" />
+    </fragment>
+    <activity
+        android:id="@+id/homeActivity2"
+        android:name="com.eng_abdelrahmman_hussien.movieapp.uilayer.activities.homeactivity.HomeActivity"
+        android:label="HomeActivity"
+        tools:layout="@layout/activity_home"/>
+    <fragment
+        android:id="@+id/dispalyPlanFeaturesFragment"
+        android:name="com.eng_abdelrahmman_hussien.movieapp.uilayer.fragments.displayplanfeaturesfragment.DisplayPlanFeaturesFragment"
+        android:label="fragment_display_plan"
+        tools:layout="@layout/fragment_display_plan" >
+        <action
+            android:id="@+id/action_dispalyPlanFeaturesFragment_to_choosePlanFragment"
+            app:destination="@id/choosePlanFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/choosePlanFragment"
+        android:name="com.eng_abdelrahmman_hussien.movieapp.uilayer.fragments.chooseplanfragment.ChoosePlanFragment"
+        android:label="fragment_choose_plan"
+        tools:layout="@layout/fragment_choose_plan" >
+        <action
+            android:id="@+id/action_choosePlanFragment_to_selectedPlanFragment"
+            app:destination="@id/selectedPlanFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectedPlanFragment"
+        android:name="com.eng_abdelrahmman_hussien.movieapp.uilayer.fragments.selectedplanfragment.SelectedPlanFragment"
+        android:label="fragment_selected_plan"
+        tools:layout="@layout/fragment_selected_plan" >
+        <action
+            android:id="@+id/action_selectedPlanFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.eng_abdelrahmman_hussien.movieapp.uilayer.fragments.signupfragment.SignUpFragment"
+        android:label="SignUpFragment"
+        tools:layout="@layout/fragment_sign_up">
+        <action
+            android:id="@+id/action_signUpFragment_to_setUpPaymentFragment"
+            app:destination="@id/setUpPaymentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/setUpPaymentFragment"
+        android:name="com.eng_abdelrahmman_hussien.movieapp.uilayer.fragments.setuppaymentfragment.SetUpPaymentFragment"
+        android:label="SetUpPaymentFragment"
+        tools:layout="@layout/fragment_set_up_payment">
+        <action
+            android:id="@+id/action_setUpPaymentFragment_to_setupCreditFragment"
+            app:destination="@id/setupCreditFragment" />
+        <action
+            android:id="@+id/action_setUpPaymentFragment_to_setUpPaypalFragment"
+            app:destination="@id/setUpPaypalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/setupCreditFragment"
+        android:name="com.eng_abdelrahmman_hussien.movieapp.uilayer.fragments.setupcreditFragment.SetupCreditFragment"
+        android:label="fragment_setup_credit"
+        tools:layout="@layout/fragment_setup_credit" >
+        <action
+            android:id="@+id/action_setupCreditFragment_to_loginFragment2"
+            app:destination="@id/loginFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/setUpPaypalFragment"
+        android:name="com.eng_abdelrahmman_hussien.movieapp.uilayer.fragments.setuppaypalfragment.SetUpPaypalFragment"
+        android:label="fragment_set_up_paypal"
+        tools:layout="@layout/fragment_set_up_paypal" />
+</navigation>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".uilayer.fragments.setuppaymentfragment.SetUpPaymentFragment"
+        android:orientation="vertical"
+        android:background="@color/signup_fragment_background">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/step_2_of_3"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"
+            android:textStyle="bold"
+            />
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/set_up_your_payment"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"
+            />
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/your_membership_start_as_soon_as_you_set_up_payment"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"
+            />
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/no_commitments_cancel_online_at_anytime"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_credit"
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:text="@string/credit_or_debit_card"
+            android:backgroundTint="@color/btn_continue_color"
+            app:cornerRadius="0dp"
+            android:layout_marginTop="125dp"
+            android:layout_gravity="center"
+            android:clickable="true"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_paypal"
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:text="@string/paypal"
+            android:backgroundTint="@color/btn_continue_color"
+            app:cornerRadius="0dp"
+            android:layout_marginTop="2dp"
+            android:layout_gravity="center"
+            android:clickable="true"
+            />
+
+    </LinearLayout>
+</layout>

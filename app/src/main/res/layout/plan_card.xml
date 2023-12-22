@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:layout_marginBottom="731dp"
+        android:elevation="5dp"
+        app:cardCornerRadius="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="@color/btn_continue_color">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/signup_fragment_background"
+            android:orientation="vertical">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textview_planType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="25dp"
+                android:text="test"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textview_plan_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="25dp"
+                android:text="test"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="25dp"
+                android:text="@string/line"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textview_plan_resolution"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="25dp"
+                android:text="test"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_select"
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="@color/btn_continue_color"
+                android:clickable="true"
+                android:text="@string/select"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:cornerRadius="0dp" />
+
+
+        </LinearLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

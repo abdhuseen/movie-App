@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+ >
+
+        <item android:id="@+id/start_menu_privacy" android:title="@string/start_activity_menu_privacy" app:showAsAction="ifRoom"/>
+        <item android:id="@+id/start_menu_help" android:title="@string/start_activity_menu_help" app:showAsAction="ifRoom"/>
+        <item android:id="@+id/start_menu_sign_in"  android:title="@string/start_activity_menu_sign_in" app:showAsAction="ifRoom"/>
+
+
+
+</menu>
+<!--
+<item android:title="" android:icon="@drawable/app_logo"  app:showAsAction="ifRoom"/>
+-->

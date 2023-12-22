@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".uilayer.fragments.firstinitialfragment.FirstInitialFragment"
+    android:orientation="vertical"
+    android:background="@color/signup_fragment_background">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginBottom="731dp"
+        android:clickable="true"
+        android:contentDescription="@string/emp"
+        android:elevation="20dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView_Image1"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="center"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/watch_on_any_device"
+        android:textColor="#41FF23"
+        android:textSize="18sp" />
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/stream_on_your_phone"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+
+</LinearLayout>
+</layout>

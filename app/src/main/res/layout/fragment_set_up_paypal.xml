@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/signup_fragment_background"
+        android:orientation="vertical"
+        tools:context=".uilayer.fragments.setuppaypalfragment.SetUpPaypalFragment">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"
+            android:text="@string/step_3_of_3"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"
+            android:text="@string/setup_your_paypal"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/paypal_layout_background"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/standard"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/usd4_99"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_change_paypal"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="15dp"
+                android:clickable="true"
+                android:text="@string/change"
+                android:textColor="#0000FF"
+                android:textSize="15sp"
+                app:cornerRadius="0dp" />
+
+        </LinearLayout>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"
+            android:text="@string/finish_sign_up"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_continue_to_paypal"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="15dp"
+            android:backgroundTint="@color/btn_continue_color"
+            android:clickable="true"
+            android:text="@string/continue_to_paypal"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:cornerRadius="0dp" />
+
+    </LinearLayout>
+</layout>

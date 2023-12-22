@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".uilayer.activities.startactivity.StartActivity"
+        android:orientation="vertical"
+        android:background="@color/signup_fragment_background">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/Base.Theme.MovieApp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/vp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="2dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_getStarted"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/btn_continue_color"
+            android:clickable="true"
+            android:text="@string/get_started"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:cornerRadius="0dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_gravity="bottom"
+            />
+
+
+    </LinearLayout>
+
+</layout>
+<!--
+app:titleTextAppearance="@style/ToolbarMenuTextAppearance"
+-->
